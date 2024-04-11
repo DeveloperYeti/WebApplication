@@ -19,7 +19,7 @@ public class SampleController {
     public void ex(){
 
     }
-    @GetMapping({"/ex2","/ex2_1"})
+    @GetMapping({"/ex2","/ex2_1 ", "/exBlock","/exLink"})
     public void exModel(Model model){
         List<SampleDTO> list = IntStream.rangeClosed(1,20).asLongStream().mapToObj(i -> {
             SampleDTO dto = SampleDTO.builder()
@@ -52,5 +52,7 @@ public class SampleController {
     public void ex3(){
         
     }
+
+
 }
 
